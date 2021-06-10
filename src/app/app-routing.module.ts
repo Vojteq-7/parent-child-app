@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {HomeComponent} from "./home/home.component";
-import {AboutComponent} from "./about/about.component";
-import {ContactComponent} from "./contact/contact.component";
-import {PostComponent} from "./post/post.component";
-import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
+import {HomeComponent} from "./component/home/home.component";
+import {AboutComponent} from "./component/about/about.component";
+import {ContactComponent} from "./component/contact/contact.component";
+import {PostsComponent} from "./component/posts/posts.component";
+import {PageNotFoundComponent} from "./component/page-not-found/page-not-found.component";
 
 const routes: Routes = [
   {
@@ -26,7 +26,7 @@ const routes: Routes = [
   },
   {
     path: 'posts',
-    component: PostComponent
+    component: PostsComponent
   },
   {
     path: '**',
